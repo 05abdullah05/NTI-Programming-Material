@@ -1,0 +1,47 @@
+a {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: aqua;
+    padding: 12px 14px;
+} 
+
+a:hover {
+    background-color: blueviolet; 
+    /* text-decoration: underline; */
+    color: #fff;
+}  
+
+ul li a {
+    color: red;
+    text-decoration: none;
+    padding: 12px 14px;
+    background-color: yellow;
+    border: 2px solid salmon;
+    display: inline-flex;
+    margin-bottom: 10px ;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.navbar {
+    position: absolute; 
+    top: 100px;
+    left: 50px;
+}
+
+ul li a:hover {
+    background-color: rgb(105, 105, 38);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+ul li {
+
+    /* display: inline; */
+
+}

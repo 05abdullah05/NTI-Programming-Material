@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+
+body 
+{
+    /* background-image: url('images/back2.jpeg'); */
+   
+
+    background-color: rgb(212, 226, 13);
+}
+
+h1 
+{
+    color: rgb(0, 0, 0);
+font-family: 'Times New Roman', Times, serif;    font-size: 70px;
+}
+
+p 
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.boxETT 
+{
+    width: 600px;
+    /* height: 500px; */
+    background-color: bisque;
+    margin: 0 auto;
+    padding: 25px;
+    border: 10px solid rgb(15, 12, 12);
+    border-radius: 50px 50px 25px 0px;
+}
+    
+hr
+{
+    background-color: brown;
+}
+    
