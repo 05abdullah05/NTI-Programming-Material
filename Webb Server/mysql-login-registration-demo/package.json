@@ -1,0 +1,14 @@
+{
+  "name": "mysql-login-registration-demo",
+  "description": "Express registration and login pages backed by MySQL",
+  "scripts": {
+    "start": "node login-server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "hbs": "^4.2.0",
+    "mysql2": "^3.9.2"
+  }
+}

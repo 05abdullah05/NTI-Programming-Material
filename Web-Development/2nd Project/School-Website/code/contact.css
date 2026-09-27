@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.title{
+    /* text-transform: uppercase; */
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #bec2c2;
+    text-align: center;
+    margin-top: 20px;
+}
+.contact{
+    position: relative; 
+    min-height: 100vh;
+    padding: 50px 100px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    background: url(../images/contactus.avif);
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+ .container .contactInfo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+}
+ .container .contactInfo .box{
+    position: relative; 
+    padding: 20px 0;
+    display: flex;
+ }
+
+ .container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgb(202, 202, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+ }
+
+ .container .contactInfo .box .text{
+    display: flex;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #5eaaa1;
+    flex-direction: column;
+    font-weight: 300;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ }
+
+ .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ }
+
+ .contactForm{
+    width: 40%;
+    padding: 40px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    margin-top: -80px;    
+ }
+
+ .contactForm h2 {
+    font-size: 30px;
+    color: #5eaaa1;
+    font-weight: 500; 
+    text-align: center; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ }
+
+ .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+ }
+
+ .contactForm .inputBox input,
+ .contactForm .inputBox textarea
+ {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #5eaaa3;
+    outline: none;
+    resize: none;
+ }
+
+ .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5%;
+    color: #666;
+ }
+ 
+ .contactForm .inputBox input:focus ~ span,
+ .contactForm .inputBox input:valid ~ span,
+ .contactForm .inputBox textarea:focus ~ span,
+ .contactForm .inputBox textarea:focus ~ span 
+ {
+    color: #5eaaa1;
+    font-size: 13px;
+    transform: translateY(-20px);
+ }
+.contactForm .inputBox  input[type="sumbit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px ;
+}
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {    
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/whiteabout.webp");
+    height: 110vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin:0;
+}
+
+
+
+.img1{
+    position: absolute;
+    height: 30px;
+    width: 35px;
+    top: 15px;
+    right: 60px;
+}
+
+.img1:hover{
+    height: 32px;
+    width: 37px;
+}
+
+
+.img2 img{
+    position: absolute;
+    top: -22px ;
+    right: 1142px;
+
+}
+
+
+.img2 img {
+    width: 100px;
+    height: 90px;
+}

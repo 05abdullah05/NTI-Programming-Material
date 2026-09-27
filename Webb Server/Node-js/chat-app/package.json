@@ -1,0 +1,16 @@
+{
+  "name": "chat-app",
+  "description": "Socket.IO chat app with MongoDB message storage",
+  "scripts": {
+    "start": "node chat-server.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1",
+    "mysql2": "^3.9.1",
+    "socket.io": "^4.7.4"
+  }
+}

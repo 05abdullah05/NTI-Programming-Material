@@ -1,6 +1,0 @@
-@media screen (max-width: 800px)
-{
-    .flexContainer > div{
-        flex:100%
-    }    
-}

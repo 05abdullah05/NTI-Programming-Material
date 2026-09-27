@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body{
+    background:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/apply.backgroundimage.avif);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin:0;
+}
+
+.registration-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 400px;
+}
+
+.registration-form h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+
+.registration-form p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.registration-form input{
+
+    font-size: 16px;
+    padding: 15px 10px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.registration-form button{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(112, 112, 112);
+}
+
+.registration-form button:hover{
+    color: #5eaaa1;
+}
+
+
+
+ul {
+    /* List stlye to remove the point infornt of the links */
+    list-style: none;
+}
+
+/* Now we style how the  */
+.navigation {
+    background-color: black;
+    /* This is used to keep it's commands otherwise the black doesnt show. */
+    overflow: hidden;
+}
+
+ /* To get the list in a line we use float left */
+ul li{
+    float: left;
+    margin-top: 2px; 
+    margin-left: 20px;
+}
+
+ul li a {
+    /* This is used to remove underline */
+    text-decoration: none;
+    color:rgb(221, 217, 217);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 10px;
+    font-size: 60px;
+    /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)); */
+    /* To get then in there box. */
+    display: inline-block;
+    /* Then we use padding to define how big of a box you want */
+    /* padding: 14px 16px; */
+   
+}

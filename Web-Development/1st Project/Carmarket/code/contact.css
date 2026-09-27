@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.contact{
+    position: relative; 
+    min-height: 100vh;
+    padding: 50px 100px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    background: url(../images/bf.jpg);
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+ .container .contactInfo
+{
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+}
+ .container .contactInfo .box{
+    position: relative; 
+    padding: 20px 0;
+    display: flex;
+ }
+
+ .container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgb(66, 65, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+ 
+ }
+
+ .container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(206, 109, 109);
+    flex-direction: column;
+    font-weight: 300;
+ }
+
+ .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+ }
+
+ .contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    margin: 50px;
+ }
+
+ .contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;  
+ }
+
+ .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+ }
+
+ .contactForm .inputBox input,
+ .contactForm .inputBox textarea
+ {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+ }
+
+ .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5%;
+    color: #666;
+ }
+ 
+ .contactForm .inputBox input:focus ~ span,
+ .contactForm .inputBox input:valid ~ span,
+ .contactForm .inputBox textarea:focus ~ span,
+ .contactForm .inputBox textarea:focus ~ span 
+ {
+    color: rgb(201, 20, 20);
+    font-size: 12px;
+    transform: translateY(-20px);
+ }
+.contactForm .inputBox  input[type="sumbit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px ;
+}
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {    
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+.nav-area{
+    position: absolute;
+    float: left;
+    left: 135px;
+    list-style: none;
+    margin-top: -575px;
+    appearance:top ;
+}
+
+.nav-area li{
+    display: inline-block;
+}
+
+.nav-area li a{
+    color: #ffff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.nav-area li a:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+body {
+    /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("andrew-neel-jtsW--Z6bFw-unsplash.jpg"); */
+    height: 90vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .menu-bar{
+height: 80px;
+border-radius: 27px;
+border: 5px solid #d9d9d9;
+background-color: #141414;
+padding-bottom: 23px;
+font-family:Arial, Helvetica, sans-serif;
+position: relative;
+z-index: -1;
+} */
+
+.img1 {
+    position: absolute;
+    top: 30px ;
+    right: 120px;            
+    height: 50px;
+    width: 55px;
+}
+
+.img1:hover{
+    height: 55px;
+    width: 60px;
+}
+
+.img2 {
+    position: absolute;
+    top: 38px ;
+    right: 40px;            
+    height: 40px;
+    width: 55px;    
+}
+
+.img2:hover{
+    height: 45px;
+    width: 60px;
+}
+.img3 {
+    position: absolute;
+    right: 1150px;
+    top: 5.8px ;
+    height: 100px;
+    width: 97px;    
+}

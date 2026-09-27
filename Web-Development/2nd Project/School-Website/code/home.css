@@ -1,0 +1,157 @@
+
+.img1{
+    position: absolute;
+    height: 30px;
+    width: 35px;
+    top: 32.5px;
+    right: 60px;
+}
+
+.img1:hover{
+    height: 32px;
+    width: 37px;
+}
+
+.img2{
+    position: absolute;
+    height: 90px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: -2px;
+}
+
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/Backgroung\ image.jfif");
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    margin:0;
+}
+
+.menu-bar{
+    height: 70px;
+    /* background-color: #c2c0c0; */
+    background: linear-gradient(rgba(253, 253, 253, 0.6), rgba(255, 255, 255, 0.6));
+    /* margin-top: -16px; */
+    padding-bottom: 23px;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    position: relative;
+    z-index: -1;
+}
+
+
+.text-box {
+    color: rgb(187, 187, 187);
+    font-size: 40px;
+    margin: 200px 0 0 100px;
+}
+
+.apply-button{
+    width: 180px;
+    margin-top: -20px;
+    margin-left: 100px;
+    border-radius: 20px;
+    background-color: #5eaaa1;
+    padding: 10px;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-align: center;
+    color: rgb(221, 217, 217);
+    font-weight: bolder;
+    */
+}
+
+.apply-button a{
+    text-decoration: none;
+    padding: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-align: center;
+    color: rgb(221, 217, 217);
+    font-weight: bolder;
+}
+
+
+
+.nav-area{
+    position: absolute;
+    right: 130px;
+    margin-top: 2px;
+}
+
+ul {
+    /* List stlye to remove the point infornt of the links */
+    list-style: none;
+}
+
+/* Now we style how the  */
+.navigation {
+    background-color: black;
+    /* This is used to keep it's commands otherwise the black doesnt show. */
+    overflow: hidden;
+}
+
+ /* To get the list in a line we use float left */
+ul li{
+    float: left;
+    margin-top: 24px; 
+}
+
+ul li a {
+    /* This is used to remove underline */
+    text-decoration: none;
+    color:rgb(221, 217, 217);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 10px;
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    /* To get then in there box. */
+    display: inline-block;
+    /* Then we use padding to define how big of a box you want */
+    /* padding: 14px 16px; */
+   
+}
+
+/* To get the hover affect we use (a:hover) */
+ul li a:hover, .COURSES:hover .courses.html{
+    background-color: white;
+    color: black;
+}
+
+/* To keep the hover affect on drop button we use (, .dropDown:hover .Dropbtn) */
+
+/* To get drop1,2.. we use display block in . dropContent a below*/
+.dropContent a{
+    display: block;
+}
+
+/* To hide the content and open only when we hover but before that to only keep the the navigation bar color we use position absolute. This make it lose and lets every other link to come closer to it and thats the 0 point
+To completly remove the dropcontents we use display None*/
+.dropContent{
+    position: absolute;
+    min-width: 160px;
+    display: none;
+    animation: slowdrop 0.5s linear;
+    /* For the above animation to work and outperform we use overflow hidden */
+    overflow: hidden;
+}
+
+/* Now laslty to only see the dropcontents when hovered hover we use display block 
+This below means that when we hover over dropDown make dispaly block on dropContent*/
+.COURSES:hover .dropContent{
+    display: block;
+}
+
+/* To get a smooth animation of it so it slowly drops down. */
+@keyframes slowdrop {
+    from {
+        max-height: 0px;
+    }
+    to {
+        max-height: 300px;
+    }
+}

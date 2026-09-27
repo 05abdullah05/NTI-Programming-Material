@@ -1,7 +1,0 @@
-1.Connecting css file to hbs(html file)
-- Solved through express. Using app.use(express.static("./public"));
-
-2. Had to dowload socket.io didnt work did npm audint 
-
-3. bcrypt password!
-

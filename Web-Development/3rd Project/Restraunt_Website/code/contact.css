@@ -1,0 +1,326 @@
+/* .img1{
+    position: absolute;
+    height: 110px;
+    width: 120px;
+    left: 20px;
+    top: 10px;
+} */
+
+.img1{
+    position: absolute;
+    height: 300px;
+    width: 310px;
+    left: 150px;
+    top: 380px;
+}
+
+.img2{
+    position: absolute;
+    height: 460px;
+    width: 470px;
+    left: 940px;
+    top: 215px;
+}
+
+body {
+    background: url("../Images/Background-pic.png");
+    height: 100vh;
+    /* -webkit-background-size: cover;
+    background-size: cover; */
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    /* position: relative; */
+    margin:0;
+}
+
+
+.nav-area{
+    position: absolute;
+    right: 130px;
+    margin-top: 2px;
+}
+
+ul {
+    /* List stlye to remove the point infornt of the links */
+    list-style: none;
+}
+
+/* Now we style how the  */
+/* .navigation {
+    background-color: black;
+    This is used to keep it's commands otherwise the black doesnt show.
+    overflow: hidden;
+} */
+
+/* To get the list in a line we use float left */
+ul li{
+    float: left;
+    margin-top: 24px; 
+}
+
+ul li a {
+    margin-right: 30px;
+    /* This is used to remove underline */
+    text-decoration: none;
+    color:rgb(221, 217, 217);
+    font-family: 'Myriad Pro', sans-serif;
+    padding: 10px 10px;
+    font-size: 24px;
+    /* background: linear-gradient(#de8511, rgba(0,0,0,9.9)); */
+    /* To get then in there box. */
+    display: inline-block;
+    /* Then we use padding to define how big of a box you want */
+    /* padding: 14px 16px; */
+   
+}
+
+/* To get the hover affect we use (a:hover) */
+ul li a:hover, .Menu:hover .menu.html{
+    background-color: #8d8882;
+    color: black;
+}
+
+/* To keep the hover affect on drop button we use (, .dropDown:hover .Dropbtn) */
+
+/* To get drop1,2.. we use display block in . dropContent a below*/
+.dropContent a{
+    display: block;
+}
+
+/* To hide the content and open only when we hover but before that to only keep the the navigation bar color we use position absolute. This make it lose and lets every other link to come closer to it and thats the 0 point
+To completly remove the dropcontents we use display None*/
+.dropContent{
+    position: absolute;
+    min-width: 160px;
+    display: none;
+    animation: slowdrop 0.5s linear;
+    /* For the above animation to work and outperform we use overflow hidden */
+    overflow: hidden;
+}
+
+/* Now laslty to only see the dropcontents when hovered hover we use display block 
+This below means that when we hover over dropDown make dispaly block on dropContent*/
+.Menu:hover .dropContent{
+    display: block;
+}
+
+/* To get a smooth animation of it so it slowly drops down. */
+@keyframes slowdrop {
+    from {
+        max-height: 0px;
+    }
+    to {
+        max-height: 300px;
+    }
+}
+
+@font-face{
+    font-family: myFont1;
+    src:url(../fonts/SerlingGalleria_PERSONAL_USE_ONLY.otf);
+}
+.restraunt-name{
+    font-family: myFont1;
+    margin-top:-45px;
+    color: #de8511;
+    font-size: 25px;
+    margin-left: 120px;
+}
+
+.header {
+   width: 100vw;
+   /* background-color: yellow; */
+   height: 30px;
+}
+
+/* Team code from here */
+.team{
+    width: 100%;
+    height: 90vh;
+    /* background-image: url(../Images/bg1.jpg); */
+    /* background-size: cover;
+    background-position: center; */
+}
+
+.team h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+    color: #8c8b88;
+}
+
+.team h1 span{
+    color: #de8511;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.team h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #de8511;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.team .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13%;
+}
+
+.team .team_box .profile{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 15px 15px #de8511;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover{
+    border-radius: 20px;
+    height: 320px;
+}
+
+.team .team_box .profile img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info{
+    top: 60%;
+}
+
+.team .team_box .profile .info .name{
+    color: #de8511;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+/* For text under chef */
+.team .team_box .profile .info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto -20px auto;
+    color: #9f9d98;
+}
+
+/* For icons when u hover over chef */
+.team .team_box .profile .info .team_icon i{
+    margin: 32px 5px 5px 0;  
+    cursor: pointer;
+    transition: 0.3s;
+    color: #a2a1a0;
+}
+
+.team .team_box .profile .info .team_icon i:hover{
+    color: #de8511;
+}
+
+
+
+/*Footer*/
+
+footer{
+    width: 99.91%;
+    padding: 10px 0 0 20px;
+    background: #14141e;
+}
+
+/* To display all the bottom contents in a line */
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+footer .footer_main .footer_tag{
+    text-align: center;
+    color: #b9b7b4;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: none;
+
+}
+
+footer .footer_main .footer_tag li a{
+    color: #b9b7b4;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    
+}
+
+
+footer .footer_main .footer_tag li {
+    padding: 2px;
+}
+
+footer .footer_main .footer_tag h2{
+    color: #a2a1a0;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+    padding: 2px;
+
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color: #de8511;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #b9b7b4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+footer .end span{
+    color: #de8511;
+    margin-left: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}

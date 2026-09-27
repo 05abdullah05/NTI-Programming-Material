@@ -1,0 +1,89 @@
+.nav-area{
+    position: absolute;
+    float: left;
+    left: 80px;
+    list-style: none;
+    margin-top: 40px;
+    appearance:top ;
+}
+
+.img1 {
+    position: absolute;
+    top: 30px ;
+    right: 120px;            
+    height: 50px;
+    width: 55px;
+}
+
+.img1:hover{
+    height: 55px;
+    width: 60px;
+}
+
+.img2 {
+    position: absolute;
+    top: 38px ;
+    right: 40px;            
+    height: 40px;
+    width: 55px;    
+}
+
+.img2:hover{
+    height: 45px;
+    width: 60px;
+}
+.img3 {
+    position: absolute;
+    right: 1150px;
+    top: 5.8px ;
+    height: 100px;
+    width: 97px;    
+}
+
+.nav-area li{
+    display: inline-block;
+}
+
+.nav-area li a{
+    color: #ffff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.nav-area li a:hover{
+    background-color: #fff;
+    color: #333;
+
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/joey-banks-YApiWyp0lqo-unsplash.jpg");
+    height: 90vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}
+a {
+    text-decoration: none;
+}
+
+.menu-bar{
+height: 80px;
+border-radius: 27px;
+border: 5px solid #d9d9d9;
+background-color: #141414;
+padding-bottom: 23px;
+font-family:Arial, Helvetica, sans-serif;
+position: relative;
+z-index: -1;
+}
+
+.ruta {
+    color: rgb(187, 187, 187);
+    font-size: 40px;
+    margin: 150px 0 0 100px;
+}
